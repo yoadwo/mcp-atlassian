@@ -24,3 +24,7 @@ jobs:
     steps:
       - name: poutine - GitHub Actions SAST
         uses: boostsecurityio/poutine-action@main
+      - name: Upload poutine SARIF file
+        uses: github/codeql-action/upload-sarif@4355270be187e1b672a7a1c7c7bae5afdc1ab94a # v3.24.10
+        with:
+          sarif_file: results.sarif
