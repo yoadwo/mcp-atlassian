@@ -26,8 +26,8 @@ jobs:
       contents: read
     steps:
       - name: poutine - GitHub Actions SAST
-        uses: boostsecurityio/poutine-action@f350a41901f0f06fa964b65b72a7ab63b644c5b2
+        uses: boostsecurityio/poutine-action@v1
       - name: Upload poutine SARIF file
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v4.32.1
         with:
           sarif_file: results.sarif
