@@ -21,6 +21,9 @@ jobs:
           exit-code: 0
   poutine:
     runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      contents: read
     steps:
       - name: poutine - GitHub Actions SAST
         uses: boostsecurityio/poutine-action@main
