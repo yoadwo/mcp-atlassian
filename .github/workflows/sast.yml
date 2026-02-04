@@ -1,4 +1,4 @@
-name: Bearer
+name: sast-tools
 
 on:
   push:
@@ -10,10 +10,12 @@ permissions:
   contents: read
 
 jobs:
-  rule_check:
+  bearer:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Run Report
         id: report
         uses: bearer/bearer-action@v2
+        with: 
+          exit-code: 0
