@@ -19,3 +19,8 @@ jobs:
         uses: bearer/bearer-action@v2
         with: 
           exit-code: 0
+  poutine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: poutine - GitHub Actions SAST
+        uses: boostsecurityio/poutine-action@main
