@@ -37,7 +37,7 @@ jobs:
       - name: Vorpal Github Action With reviewdog
         uses: Checkmarx/vorpal-reviewdog-github-action@v1.2.0
         with:
-          source_path: src/mcp_atlassian
+          source_path: mcp_atlassian/src/mcp_atlassian
           filter_mode: file
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-check
